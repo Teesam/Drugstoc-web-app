@@ -213,17 +213,24 @@
     #edit-icon{
         cursor: pointer;
         font-size: .7rem;
+        margin-left: 2rem;
     }
     
     #delete-icon{
         cursor: pointer;
-        margin-left: .7rem;
+        margin-left: unset;
         font-size: .7rem;
+        margin-right: 2rem;
     }
     
     #edit-delete-holder{
-        min-width: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-width: unset;
+        width: 100%;
         min-height: 1rem;
+        margin-top: .5rem;
     }
     
     #delete-caution{
