@@ -40,8 +40,7 @@ const Task = ({ tasks, loading, currentPage, id, filterText }) => {
                 {
                      tasks.map( task => {
                          const deleteTaskHandler = (task) => {
-                             console.log('--->', task.id);
-                            // db.collection().doc(id)
+                            db.collection('tasks').doc(task.id).delete();
                         }
                         return  <div    
                                 onMouseLeave = { () => {

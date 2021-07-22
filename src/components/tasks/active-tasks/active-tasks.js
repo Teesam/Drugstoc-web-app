@@ -1,7 +1,6 @@
 import './active-tasks.css';
 import Header from '../../header/header';
 import Search from '../../search/search';
-import Menu from '../../menu/menu';
 import { NavLink } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { db } from '../../../firebase';
@@ -30,7 +29,6 @@ const ActiveTasks = () => {
         .then( snapshot => {
           const tasks = [];
     
-          // if(snapshot){
             snapshot.forEach( doc => {
             const data = ({ ...doc.data(), id: doc.id});
             tasks.push(data);
