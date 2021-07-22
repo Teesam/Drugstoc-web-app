@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Modal from '../modal/modal';
 import { db } from '../../firebase';
 
-const Task = ({ tasks, loading, currentPage, id  }) => {
+const Task = ({ tasks, loading, currentPage, id, filterText }) => {
 
     const [ displayOptions, setDisplayOptions ] = useState(false);
     const [ modalSwitch, setModalSwitch ] = useState(false);

@@ -47,14 +47,24 @@ const ActiveTasks = () => {
 
       const filterHandler = (e) => {
         setFilterText(e.target.value);
-        console.log(filterText);
       }
 
       const indexOfLastPageTask = currentPage * tasksPerPage;
       const indexOfFirstPageTask = indexOfLastPageTask - tasksPerPage;
-      const currentTask = tasks.slice(indexOfFirstPageTask, indexOfLastPageTask).filter( task => {
-          return task.taskType.toLowerCase().indexof(filterText.toLowerCase()) >= 0;
-      });
+      
+      //Filtering the tasks
+      let filteredTasks = tasks.filter( val => {
+        if(filterText === ''){
+            return val;
+        }else if( val.taskType.toLowerCase().includes(filterText.toLowerCase())){
+            return val;
+        }
+        });
+
+        // getting the tasks on the current page
+      const currentTask = filteredTasks.slice(indexOfFirstPageTask, indexOfLastPageTask);
+      
+      
 
 
     return (
@@ -142,9 +152,17 @@ const ActiveTasks = () => {
                         </div>
                     </div>
                 
-                <Task id = 'task-import' tasks = { currentTask } loading = { isLoading } currentPage = { currentPage } />
+                <Task filterText = { filterText }
+                     id = 'task-import' 
+                     tasks = { currentTask } 
+                     loading = { isLoading } 
+                     currentPage = { currentPage } 
+                />
 
-                <Pagination totalTasks = { totalTasks } tasksPerPage = { tasksPerPage } />
+                <Pagination 
+                    totalTasks = { totalTasks } 
+                    tasksPerPage = { tasksPerPage }
+                />
 
             
                 </div>
