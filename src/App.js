@@ -1,6 +1,5 @@
 import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Store from './store';
 import Body from './components/body/body';
 import ArchivedTasks from './components/tasks/archived-tasks/archived-tasks';
 import ClosedTasks from './components/tasks/closed-tasks/closed-tasks';
@@ -10,7 +9,6 @@ import ActiveTasks from './components/tasks/active-tasks/active-tasks';
 const App = () => {
   return (
     <Router>
-      <Store>
         <div className = 'App'>
 
           <Route path =  '/'  exact strict component = { ActiveTasks } />
@@ -22,7 +20,6 @@ const App = () => {
           <Route path =  '/completed'  exact strict component = { CompletedTasks } />
 
         </div>
-      </Store>
     </Router>
   );
 }

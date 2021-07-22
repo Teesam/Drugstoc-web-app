@@ -7,8 +7,6 @@ import { useState } from 'react';
 
 const ArchivedTasks = () => {
 
-    const [ tasks, setTasks ] = useState([])
-
     return (
         <div className = 'Archived-tasks'>
             <Header />
@@ -32,29 +30,7 @@ const ArchivedTasks = () => {
                     </div>
                 </div>
 
-                {/* {
-                tasks.length > 0 && tasks.map( ( task, index ) => {
-                    return  <div className = 'Task-holder' key = { index }>
-                                <i id = 'read-icon' className = "fas fa-folder"></i>
-                                <div>
-                                    <h4>{ task.title }</h4>
-                                    <p>{ task.taskType }</p>
-                                </div>
-                                <div>
-                                    <h5>{ task.price }</h5>
-                                    <p>Task price</p>
-                                    <p>{ delivery + ' ' + Within + ' ' + `${ task.deliveryDuration }` + ' '  +  days }</p>
-                                </div>
-                                <div>
-                                    <img src =  { task.image }/>
-                                    <div>
-                                        <h5>{ task.name }</h5>
-                                        <p>Assigned to</p>
-                                    </div>
-                                </div>
-                            </div>
-                }) 
-            } */}
+                
             </div>
         </div>
     )
