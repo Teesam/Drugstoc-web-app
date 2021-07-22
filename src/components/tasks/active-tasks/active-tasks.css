@@ -660,10 +660,11 @@
     
     #title-holder{
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
+        flex-direction: unset;
+        justify-content: space-between;
+        align-items: center;
         width: 100%;
+        margin: .5rem 0;
     }
     
     #assigned-holder{
@@ -677,6 +678,13 @@
     #task-import{
         margin-top: 2rem;
         padding-bottom: 3rem;
+    }
+
+    .Price-holder{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: .5rem 0;
     }
 
 

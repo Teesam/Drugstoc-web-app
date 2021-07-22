@@ -85,7 +85,7 @@ const Task = ({ tasks, loading, currentPage, id  }) => {
                                         : ''
                                     }
                                 </div>
-                                <div>
+                                <div className = 'Price-holder'>
                                     <h4 id = 'price'>{ 'N' + `${task.taskPrice}`+ '.00' }</h4>
                                     <p style = {{ marginTop: '.5rem', marginBottom: '.5rem' }}>Task price</p>
                                     <p>{ 'Delivery:' + ' ' + 'Within' + ' ' + `${ task.taskDuration }` + ' '  +  'days' }</p>
