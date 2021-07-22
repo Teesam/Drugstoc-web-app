@@ -562,6 +562,7 @@
         cursor: pointer;
         position: relative;
         font-size: .8rem;
+        margin: .5rem 0;
     }
     
     #verify::before{
@@ -584,6 +585,7 @@
         cursor: pointer;
         position: relative;
         font-size: .8rem;
+        margin: .5rem 0;
     }
     
     #in-review::before{
@@ -606,6 +608,7 @@
         cursor: pointer;
         position: relative;
         font-size: .8rem;
+        margin: .5rem 0;
     }
     
     #in-progress::before{
@@ -628,6 +631,7 @@
         cursor: pointer;
         position: relative;
         font-size: .8rem;
+        margin: .5rem 0;
     }
     
     #waiting-approval::before{
