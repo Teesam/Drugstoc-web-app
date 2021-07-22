@@ -76,3 +76,109 @@
 select{
     padding: 1rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1370px){
+    .Search{
+        margin-top: 1rem;
+        position: relative;
+        padding-right: unset;
+        overflow: hidden;
+        background-color: white;
+    }
+    
+    #search-input{
+        width: 80%;
+        border: none;
+        padding: .5rem 7rem .5rem 5rem;
+        font-size: 1rem;
+    }
+    
+    #demacate{
+        background-color: black;
+        width: .5px;
+        height: 1.5rem;
+        margin-right: 1rem;
+    }
+    
+    #sort-button{
+        background-color: transparent;
+        border: none;
+        width: 1.5rem;
+        height: 1.5rem;
+        cursor: pointer;
+        margin-left: 1rem;
+    }
+    
+    #ham-1{
+        width: 90%;
+        height: 1px;
+        background-color: black;
+    }
+    
+    #ham-2{
+        width: 60%;
+        height: 1px;
+        background-color: black;
+        margin-top: 7px;
+    }
+    
+    #ham-3{
+        width: 30%;
+        height: 1px;
+        background-color: black;
+        margin-top: 7px;
+    }
+    
+    #search-icon{
+        position: absolute;
+        left: 2rem;
+        top: 30%;
+        color: grey;
+        font-size: 1rem;
+    }
+    
+    #sort-holder{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 1rem;
+        top: 10%;
+    }
+    
+    #sort-item-holder{
+        position: absolute;
+        top: 1rem;
+        right: -1rem;
+        z-index: 2;
+    }
+    
+    select{
+        padding: .5rem;
+    }
+
+}

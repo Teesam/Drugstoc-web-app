@@ -206,3 +206,242 @@
     margin-top: 3rem;
     padding-bottom: 3rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1370px){
+
+    .Active-tasks{
+        width: 100%;
+    }
+    
+    .Task-holder{
+        background-color: white;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        color: grey;
+        margin-top: .5rem;
+        transition: .2s;
+        padding: .5rem;
+        min-height: 4rem;
+    }
+    
+    #read-icon{
+        color: grey;
+        font-size: .8rem;
+        cursor: pointer;
+    }
+    
+    #custom-color{
+        color: rgb(107, 107, 107);
+        padding: .5rem;
+        background-color: rgb(219, 219, 213);
+        border-radius: 50px;
+        text-align: center;
+        font-size: .5rem;
+    }
+    
+    #optimization-color{
+        color: rgb(255, 255, 255);
+        padding: .5rem;
+        background-color: rgb(17, 16, 16);
+        border-radius: 50px;
+        text-align: center;
+        font-size: .5rem;
+    }
+    
+    #market-color{
+        color: rgb(114, 3, 71);
+        padding: .5rem;
+        background-color: rgb(241, 90, 178);
+        border-radius: 50px;
+        text-align: center;
+        font-size: .5rem;
+    }
+    
+    #integration-color{
+        color: rgb(50, 121, 3);
+        padding: .5rem;
+        background-color: rgb(113, 236, 75);
+        border-radius: 50px;
+        text-align: center;
+        font-size: .5rem;
+    }
+    
+    #deployment-color{
+        color: rgb(136, 21, 1);
+        padding: .5rem;
+        background-color: rgb(252, 84, 84);
+        border-radius: 50px;
+        text-align: center;
+        font-size: .5rem;
+    }
+    
+    #testing-color{
+        color: rgb(3, 99, 128);
+        padding: .5rem;
+        background-color: rgb(1, 189, 214);
+        border-radius: 50px;
+        text-align: center;
+        font-size: .5rem;
+    }
+    
+    #name{
+        color: black;
+        margin-bottom: .5rem;
+    }
+    
+    #price{
+        color: black;
+    }
+    
+    #title{
+        color: black;
+        margin-bottom: .5rem;
+        font-size: .9rem;
+    }
+    
+    #verify{
+        padding: .3rem 1.5rem;
+        border: 1px solid grey;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        cursor: pointer;
+        position: relative;
+        font-size: .7rem;
+    }
+    
+    #verify::before{
+        content: '';
+        position: absolute;
+        top: 40%;
+        left: 7%;
+        background-color: red;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+    }
+    
+    #in-review{
+        padding: .3rem 1.5rem;
+        border: 1px solid grey;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        cursor: pointer;
+        position: relative;
+        font-size: .7rem;
+    }
+    
+    #in-review::before{
+        content: '';
+        position: absolute;
+        top: 40%;
+        left: 7%;
+        background-color: rgb(216, 216, 64);
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+    }
+    
+    #in-progress{
+        padding: .3rem 1.5rem;
+        border: 1px solid grey;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        cursor: pointer;
+        position: relative;
+        font-size: .7rem;
+    }
+    
+    #in-progress::before{
+        content: '';
+        position: absolute;
+        top: 40%;
+        left: 7%;
+        background-color: rgb(48, 160, 204);
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+    }
+    
+    #waiting-approval{
+        padding: .3rem 1.5rem;
+        border: 1px solid grey;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        cursor: pointer;
+        position: relative;
+        font-size: .7rem;
+    }
+    
+    #waiting-approval::before{
+        content: '';
+        position: absolute;
+        top: 40%;
+        left: 7%;
+        background-color: rgb(83, 83, 81);
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+    }
+    
+    #options{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 2rem;
+        cursor: pointer;
+        padding: .5rem 0;
+    }
+    
+    #option-1,
+    #option-2,
+    #option-3{
+        width: .3rem;
+        height: .3rem;
+        border-radius: 50%;
+        background-color: grey;
+    }
+    
+    #title-holder{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 20%;
+    }
+    
+    #assigned-holder{
+        width: 20%;
+    }
+    
+    #stage-holder{
+        width: 15%;
+    }
+    
+    #task-import{
+        margin-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+}

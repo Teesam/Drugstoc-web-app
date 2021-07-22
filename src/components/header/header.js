@@ -17,7 +17,8 @@ const Header = () => {
     const [ taskStage ] = useState([
         { stage: 'In review'},
         { stage: 'Verify'},
-        { stage: 'In progress'}
+        { stage: 'In progress'},
+        { stage: 'Waiting approval'}
     ]);
     const [ taskData, setTaskData ] = useState({
         taskType: '',
@@ -72,7 +73,7 @@ const Header = () => {
 
                             e.target.value = '';
                         }}>
-                        <h1>Task</h1>
+                        <h1 id = 'header'>Task</h1>
                         <div className = 'Input-holder'>
                             <label className = 'Modal-label'>Title</label>
                             <input

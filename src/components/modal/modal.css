@@ -27,3 +27,42 @@
     justify-content: center;
     align-items: center;
 }
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1370px){
+    .Modal{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: #0007;
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    #close-icon{
+        font-size: 1.5rem;
+        color: rgb(209, 65, 65);
+        cursor: pointer;
+        position: absolute;
+        top: 4rem;
+        right: 4rem;
+    }
+    
+    #holder{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

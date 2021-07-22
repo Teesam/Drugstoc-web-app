@@ -18,4 +18,10 @@
   min-height: 99vh;
 }
 
+@media only screen and (max-width: 1370px){
+    .App{
+      font-size: 11px;
+    }
+}
+
 

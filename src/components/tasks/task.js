@@ -28,7 +28,8 @@ const Task = ({ tasks, loading, currentPage, id  }) => {
     const [ taskStage ] = useState([
         { stage: 'In review'},
         { stage: 'Verify'},
-        { stage: 'In progress'}
+        { stage: 'In progress'},
+        { stage: 'Waiting approval'}
     ]);
 
 
@@ -115,6 +116,12 @@ const Task = ({ tasks, loading, currentPage, id  }) => {
                                         <p id = 'in-progress'>{ task.taskStage}</p>
                                         : ''
                                     }
+
+                                    {   
+                                        ( task.taskStage.toLowerCase() ) === 'waiting approval' ?
+                                        <p id = 'waiting-approval'>{ task.taskStage}</p>
+                                        : ''
+                                    }
                                 </div>
 
                                 <i id = 'read-icon' className = "fas fa-comment-alt"></i>
@@ -181,7 +188,7 @@ const Task = ({ tasks, loading, currentPage, id  }) => {
                                         <div className = 'Input-holder'>
                                             <label className = 'Modal-label'>Stage</label>
                                             <div id = 'select-holder'>
-                                                <select id = 'modal-select-input' name = 'task-type'
+                                                <select className = 'Modal-select-input' name = 'task-type'
                                                 onChange = { (e) => {
                                                     const selectedTaskStage = e.target.value;
                                                     setTaskData({
@@ -204,7 +211,7 @@ const Task = ({ tasks, loading, currentPage, id  }) => {
                                         <div className = 'Input-holder'>
                                             <label className = 'Modal-label'>Type</label>
                                             <div id = 'select-holder'>
-                                                <select id = 'modal-select-input' name = 'task-type'
+                                                <select className = 'Modal-select-input' name = 'task-type'
                                                 onChange = { (e) => {
                                                     const selectedTaskType = e.target.value;
                                                     setTaskData({
