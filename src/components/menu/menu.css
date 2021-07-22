@@ -18,3 +18,35 @@
 .Box-holder > label{
     margin-left: 1rem;
 }
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 490px){
+
+    .Menu{
+        padding: 1rem;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        color: grey;
+        padding-bottom: 2rem;
+    }
+    
+    .Menu > div:not(:first-child){
+        margin-top: 2rem;
+    }
+    
+    .Box-holder:not(:first-child){
+        margin-top: 1rem;
+    }
+    
+    .Box-holder > label{
+        margin-left: 1rem;
+    }
+    
+}
