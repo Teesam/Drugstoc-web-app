@@ -213,14 +213,12 @@
     #edit-icon{
         cursor: pointer;
         font-size: .7rem;
-        margin-left: 2rem;
     }
     
     #delete-icon{
         cursor: pointer;
         margin-left: unset;
         font-size: .7rem;
-        margin-right: 2rem;
     }
     
     #edit-delete-holder{
