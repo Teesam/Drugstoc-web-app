@@ -1,0 +1,20 @@
+.Menu{
+    padding: 1rem;
+    width: 20%;
+    height: 100%;
+    background-color: white;
+    color: grey;
+    padding-bottom: 2rem;
+}
+
+.Menu > div:not(:first-child){
+    margin-top: 2rem;
+}
+
+.Box-holder:not(:first-child){
+    margin-top: 1rem;
+}
+
+.Box-holder > label{
+    margin-left: 1rem;
+}
