@@ -160,10 +160,10 @@ const Header = () => {
                                 }}
                             className = 'Modal-input' type = ' text' placeholder = 'Price here' />
                         </div>
-                        <div className = 'Input-holder'>
+                        {/* <div className = 'Input-holder'>
                             <label className = 'Modal-label'>Image</label>
                             <input className = 'Modal-input' type = 'file' />
-                        </div>
+                        </div> */}
                         <button
                             onClick = { (e) => {
                                 e.preventDefault();
