@@ -180,3 +180,102 @@
     }
 
 }
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 490px){
+
+    #current{
+        padding: .4rem;
+        background-color: grey;
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin-left: .5rem;
+    }
+    
+    .Current-keeper{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    #edit-icon{
+        cursor: pointer;
+        font-size: .7rem;
+    }
+    
+    #delete-icon{
+        cursor: pointer;
+        margin-left: .7rem;
+        font-size: .7rem;
+    }
+    
+    #edit-delete-holder{
+        min-width: 2rem;
+        min-height: 1rem;
+    }
+    
+    #delete-caution{
+        color: white;
+    }
+    
+    #proceed-button{
+        background-color: #4B70D6;
+        padding: .5rem 1rem;
+        margin-right: 2rem;
+        border: 1px solid transparent;
+        border-radius: 50px;
+        color: white;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 1rem;
+        transition: .3s;
+    }
+    
+    #proceed-button:hover{
+        background-color: white;
+        color: #4B70D6;
+        border: 1px solid #4B70D6;
+    }
+    
+    #cancel-button{
+        background-color: #aa3939;
+        padding: .5rem 2rem;
+        border: 1px solid transparent;
+        border-radius: 50px;
+        color: white;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 1rem;
+        transition: .3s;
+    }
+    
+    #cancel-button:hover{
+        background-color: white;
+        color: #aa3939;
+        border: 1px solid #aa3939;
+    }
+    
+    #modal-holder{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #checker-holder{
+        margin-top: 4rem;
+    }
+
+}
