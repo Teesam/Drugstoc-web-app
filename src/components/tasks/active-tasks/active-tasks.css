@@ -481,6 +481,7 @@
         color: grey;
         font-size: .8rem;
         cursor: pointer;
+        margin: .5rem 0;
     }
     
     #custom-color{
@@ -549,7 +550,7 @@
     #title{
         color: black;
         margin-bottom: .5rem;
-        font-size: .9rem;
+        font-size: 1rem;
     }
     
     #verify{
@@ -560,14 +561,14 @@
         border-bottom-left-radius: 50px;
         cursor: pointer;
         position: relative;
-        font-size: .7rem;
+        font-size: .8rem;
     }
     
     #verify::before{
         content: '';
         position: absolute;
         top: 40%;
-        left: 7%;
+        left: 2%;
         background-color: red;
         width: 6px;
         height: 6px;
@@ -582,14 +583,14 @@
         border-bottom-left-radius: 50px;
         cursor: pointer;
         position: relative;
-        font-size: .7rem;
+        font-size: .8rem;
     }
     
     #in-review::before{
         content: '';
         position: absolute;
         top: 40%;
-        left: 7%;
+        left: 2%;
         background-color: rgb(216, 216, 64);
         width: 6px;
         height: 6px;
@@ -604,14 +605,14 @@
         border-bottom-left-radius: 50px;
         cursor: pointer;
         position: relative;
-        font-size: .7rem;
+        font-size: .8rem;
     }
     
     #in-progress::before{
         content: '';
         position: absolute;
         top: 40%;
-        left: 7%;
+        left: 2%;
         background-color: rgb(48, 160, 204);
         width: 6px;
         height: 6px;
@@ -626,14 +627,14 @@
         border-bottom-left-radius: 50px;
         cursor: pointer;
         position: relative;
-        font-size: .7rem;
+        font-size: .8rem;
     }
     
     #waiting-approval::before{
         content: '';
         position: absolute;
         top: 40%;
-        left: 7%;
+        left: 2%;
         background-color: rgb(83, 83, 81);
         width: 6px;
         height: 6px;
