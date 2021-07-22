@@ -228,6 +228,7 @@
     
     #delete-caution{
         color: white;
+        text-align: center;
     }
     
     #proceed-button{
@@ -272,6 +273,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        width: 100%;
     }
     
     #checker-holder{
