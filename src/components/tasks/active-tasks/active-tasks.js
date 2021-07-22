@@ -13,10 +13,9 @@ const ActiveTasks = () => {
 
     const [ tasks, setTasks ] = useState([]);
     const [ isLoading, setIsLoading ] = useState( false );
-    const [ isFiltered, setIsFiltered ] = useState(false);
-    const [ filters, setFilters ] = useState([]);
     const [ currentPage, setCurrentPage ] = useState(1);
     const [ tasksPerPage ] = useState(6);
+    const [ filterText, setFilterText ] = useState('');
     
     const totalTasks = tasks.length;
     let max = totalTasks.length - currentPage;
@@ -45,26 +44,17 @@ const ActiveTasks = () => {
 
       }, [])
 
-    // if(!isLoading){
-    //     console.log(tasks);
-    // }
-
 
       const filterHandler = (e) => {
-
-        console.log(e.target.value);
-          setFilters([
-              ...filters, e.target.value
-          ]);
-
-          setTimeout(() => {
-            console.log(filters);
-          }, 3000);
+        setFilterText(e.target.value);
+        console.log(filterText);
       }
 
       const indexOfLastPageTask = currentPage * tasksPerPage;
       const indexOfFirstPageTask = indexOfLastPageTask - tasksPerPage;
-      const currentTask = tasks.slice(indexOfFirstPageTask, indexOfLastPageTask);
+      const currentTask = tasks.slice(indexOfFirstPageTask, indexOfLastPageTask).filter( task => {
+          return task.taskType.toLowerCase().indexof(filterText.toLowerCase()) >= 0;
+      });
 
 
     return (
@@ -78,23 +68,23 @@ const ActiveTasks = () => {
                     <div>
                         <h4>Tags</h4>
                         <div className = 'Box-holder'>
-                            <input value = 'custom-task' type = 'checkbox' />
+                            <input value = 'custom-task' type = 'checkbox' onChange = { filterHandler }/>
                             <label>Custom task</label>
                         </div>
                         <div className = 'Box-holder'>
-                            <input value = 'marketing & sales' type = 'checkbox' />
+                            <input value = 'marketing & sales' type = 'checkbox' onChange = { filterHandler }/>
                             <label>Marketing and sales</label>
                         </div>
                         <div className = 'Box-holder'>
-                            <input value = 'integration' type = 'checkbox' />
+                            <input value = 'integration' type = 'checkbox' onChange = { filterHandler }/>
                             <label>Integration</label>
                         </div>
                         <div className = 'Box-holder'>
-                            <input value = 'optimization' type = 'checkbox' />
+                            <input value = 'optimization' type = 'checkbox' onChange = { filterHandler }/>
                             <label>Optimization</label>
                         </div>
                         <div className = 'Box-holder'>
-                            <input value = 'deployment' type = 'checkbox' />
+                            <input value = 'deployment' type = 'checkbox' onChange = { filterHandler }/>
                             <label>Deployment</label>
                         </div>
                         <div className = 'Box-holder'>

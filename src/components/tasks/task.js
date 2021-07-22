@@ -39,7 +39,6 @@ const Task = ({ tasks, loading, currentPage, id  }) => {
                 <div className = 'Current-keeper'> Current <p id = 'current'>{currentPage}</p>  </div>
                 {
                      tasks.map( task => {
-                         console.log(task.id);
                          const deleteTaskHandler = (task) => {
                              console.log('--->', task.id);
                             // db.collection().doc(id)
@@ -139,7 +138,7 @@ const Task = ({ tasks, loading, currentPage, id  }) => {
                                 </div>
 
                                 
-                                <div id = 'edit-delete-holder'> 
+                                <div id = 'edit-delete-holder'>
                                 
                                     {
                                         displayOptions ?
